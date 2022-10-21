@@ -20,6 +20,11 @@ class Header extends React.Component {
                             <li className="header-nav__item2">Blog</li>
                             <li className="header-nav__item3">Contact</li>
                         </ul>
+                        <div className="burger-nav">
+                            <div className="burger-line1"></div>
+                            <div className="burger-line2"></div>
+                            <div className="burger-line3"></div>
+                        </div>
                     </nav>
                     <div className="hello-block">
                         <div className='hello-block-text'>

@@ -104,10 +104,11 @@ h6 {
   justify-content: flex-end;
   gap: 33px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.42rem;
   line-height: 29px;
   margin-bottom: 140px;
 }
+
 
 .hello-block {
   display: flex;
@@ -121,13 +122,13 @@ h6 {
 
 .hello-block-h2 {
   font-weight: 700;
-  font-size: 44px;
+  font-size: 3.14rem;
   line-height: 60px;
 }
 
 .hello-block-p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.14rem;
   line-height: 24px;
 }
 
@@ -143,7 +144,7 @@ h6 {
   background: #FF6464;
   border-radius: 2px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.4rem;
   line-height: 29px;
   text-align: center;
   color: white;
@@ -163,13 +164,13 @@ main {
 }
 
 .main-h2-block h2 {
-  font-size: 22px;
+  font-size: 1.6rem;
   line-height: 60px;
   color: #21243D;
 }
 
 .main-h2-block a {
-  font-size: 16px;
+  font-size: 1.14rem;
   line-height: 24px;
   text-align: right;
   color: #00A8CC;
@@ -197,7 +198,7 @@ main {
 .main-posts1 h2,
 .main-posts2 h2 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 1.85rem;
   line-height: 38px;
   color: #21243D;
   margin-bottom: 17px;
@@ -212,7 +213,7 @@ main {
 
 .main-date-block {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.3rem;
   line-height: 26px;
   color: #21243D;
 }
@@ -224,7 +225,7 @@ main {
 
 .main-post-content {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.14rem;
   line-height: 24px;
   color: #21243D;
 }
@@ -236,7 +237,7 @@ section {
 
 section h2 {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 1.6rem;
   line-height: 60px;
   color: #21243D;
 }
@@ -266,7 +267,7 @@ section h2 {
 
 .feature-block-text-side h2 {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 2.1rem;
   line-height: 44px;
   color: #21243D;
   margin-bottom: 16px;
@@ -279,7 +280,7 @@ section h2 {
   border-radius: 16px;
   text-align: center;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 1.3rem;
   padding-top: 5px;
   color: #FFFFFF;
 
@@ -287,7 +288,7 @@ section h2 {
 
 .feature-block-text-elem-position p {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.4rem;
   line-height: 29px;
   color: #8695A4;
   margin-top: -2px;
@@ -295,7 +296,7 @@ section h2 {
 
 .feature-block-p-content {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.14rem;
   line-height: 24px;
   max-width: 594px;
   height: 93px;
@@ -328,7 +329,7 @@ section h2 {
   margin-right: 30px;
   text-align: center;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 21px;
   text-align: center;
   color: #21243D;
@@ -357,7 +358,32 @@ ADAPTIVE */
 @media (max-width: 767px) {
   .container {
     max-width: none;
+  }
 
+  .header-nav {
+    display: none;
+  }
+
+  .burger-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 33px;
+  }
+
+  .hello-block-text {
+    margin-bottom: 27px;
+  }
+
+  .burger-line1,
+  .burger-line2,
+  .burger-line3 {
+    width: 30px;
+    height: 0px;
+    border: 1px solid #21243D;
   }
 
   .hello-block {
@@ -378,7 +404,7 @@ ADAPTIVE */
   }
 
   .hello-block-h2 {
-    font-size: 32px;
+    font-size: 2.3rem;
     line-height: 40px;
     text-align: center;
     color: #21243D;
@@ -394,7 +420,7 @@ ADAPTIVE */
     width: 328px;
     height: 96px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.14rem;
     line-height: 24px;
     text-align: center;
 
@@ -410,7 +436,7 @@ ADAPTIVE */
   }
 
   .header-download-btn {
-    padding: 20px;
+    padding: 10px 10px;
   }
 
   /* MAIN-ADAPT */
@@ -419,6 +445,7 @@ ADAPTIVE */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 0px;
   }
 
   .main-h2-block a {
@@ -447,12 +474,21 @@ ADAPTIVE */
 
   }
 
+  .feature-block-p-content {
+    padding-bottom: 20px;
+  }
+
+  .main-posts2,
+  .main-posts1 {
+    overflow: scroll;
+  }
+
   .feature-block-img-side {
-    max-width: 339px;
-    width: 100%;
-    height: 180px;
     order: -1;
-    background: url('./feature_img_2.png') no-repeat;
+    max-width: 100%;
+    width: 344px;
+    height: 230px;
+    background: url('./feature_img_1.png') center/cover no-repeat;
     border-radius: 6px;
   }
 
